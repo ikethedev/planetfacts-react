@@ -1,0 +1,207 @@
+.planet__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .planet__container{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.planet__info{
+    order: 3;
+}
+@media screen and (min-width: 768px) {
+    .planet__info{
+        grid-column: 3 / -1 ;
+    }
+}
+
+
+.planet__name{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Antonio", sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .planet__name{
+        padding-top: 1rem;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .planet__name{
+        font-size: 5rem;
+    }
+}
+
+
+.planet__description{
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 22px;
+    margin-top: 1rem;
+    color: white;
+    opacity: 0.7;
+    padding: 0 24px;
+
+}
+
+.planet__description{
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 22px;
+    margin-top: 1rem;
+    color: white;
+    opacity: 0.7;
+    padding: 0 24px;
+    margin-bottom: 2rem;
+    order: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .planet__description{
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .planet__description{
+        font-size: 0.875rem;
+    }
+}
+
+.planet__link{
+    text-align: center;
+    padding-top: 2rem;
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+@media screen and (min-width: 768px) {
+    .planet__link{
+        text-align: left;
+    }
+}
+
+.planet__link{
+    opacity: 0.2;
+}
+
+.source__container{
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.planet__img{
+    width: 75%;
+    margin: 0 auto 24px;
+    order: 2;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .planet__img{
+        grid-column: 1 / -3;
+        grid-row: 1 / -1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .planet__img{
+        grid-column: 1 / 3;
+        grid-row: 1 / -1;
+    }
+}
+
+.stat__div{
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px #979797;
+}
+
+
+@media screen and (min-width: 768px) {
+    .stat__div{
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 103px;
+      padding-bottom: 23px;
+      padding-top: 21px;
+      margin-top: 3rem;
+    }
+}
+
+.stats{
+    width: 100%;
+    background-color: #070724;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .stats{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .stats{
+      
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}
+
+.planet__stat-title{
+    font-size: .5rem;
+    align-self: center;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-family: "League Spartan", sans-serif;
+    letter-spacing: 0.727273px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+    .planet__stat-title{
+      padding-bottom: 6px;
+      align-self: flex-start;
+    }
+}
+
+.planet__stat{
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 1440px) {
+    .planet__stat{
+      font-size: 2.5rem;
+    }
+}

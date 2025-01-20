@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+main{
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.planet__content-container{
+  padding: 0 0 4.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .planet__content-container{
+  display: grid;
+  column-gap: 69px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 24px 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .planet__content-container{
+  padding: 126px 165px 100px;
+  }
+}
